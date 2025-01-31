@@ -43,7 +43,7 @@ class RotateEffectGame extends FlameGame {
           //Тут також не запрещаю гратися :)
           if (reset) {
             animation.add(
-                RotateEffect.by(tau / 4, EffectController(duration: 1)));
+                RotateEffect.to(tau / 4, EffectController(duration: 1)));
             reset = false;
           } else {
             animation.add(
