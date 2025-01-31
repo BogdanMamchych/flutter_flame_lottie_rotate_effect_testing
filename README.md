@@ -1,16 +1,12 @@
 # flutter_flame_lottie_rotate_effect_testing
 
-A new Flutter project.
+Тестування ефекту RotateEffect на Flame. Flutter
 
-## Getting Started
+## Опис
 
-This project is a starting point for a Flutter application.
+### RotateEffect - ефект, який відповідає за оберт анімації. RotateEffect.by() - оберт за часовою стрілкою відносно її поточної оріентації, а RotateEffect.to() - це оберт за часовою стрілкою на вказаний кут. Кути вимірюються в радіанах.
 
-A few resources to get you started if this is your first Flutter project:
+## Атрибути
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### - angle - кут. В даному прикладі (RotateEffect.by()) програма поверне кубок за часовою стрілкою на 90 градусів. Але якщо змінити на RotateEffect.to(), тоді програма поверне кубок на схід;
+### - controller - контроллер ефекту, в якому можна задати такі значення, як duration - тривалість(до речі, чим менше тривалість, тим більша швидкість), infinite - чи є ефект безкінечним, alternate - чи буде виконання в зворотній бік після виконання і т.д;
