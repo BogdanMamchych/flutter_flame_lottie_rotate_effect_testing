@@ -44,12 +44,11 @@ class RotateEffectGame extends FlameGame {
           if (reset) {
             animation.add(
                 RotateEffect.to(tau / 4, EffectController(duration: 1)));
-            reset = false;
           } else {
             animation.add(
                 RotateEffect.by(-tau / 4, EffectController(duration: 1)));
-            reset = true;
           }
+          reset = !reset;
         });
 
     add(rotateCupButton);
